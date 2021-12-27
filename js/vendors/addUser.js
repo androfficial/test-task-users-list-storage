@@ -1,7 +1,7 @@
 import { sendData } from "./api.js";
 import { userItem } from "./htmlElements.js";
 
-export const addUser = (name = "testName", phone = "+38050500550") => {
+export const addUser = (name = "testName", phone = "testPhone") => {
   if (!document.querySelector(".store__list-users")) {
     document.querySelector(".store__container").insertAdjacentHTML(
       "beforeend",
