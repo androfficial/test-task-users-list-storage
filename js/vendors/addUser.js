@@ -10,6 +10,7 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
       `
     );
   }
+
   document
     .querySelector(".store__list-users")
     .insertAdjacentHTML("afterbegin", userItem(name, phone));
