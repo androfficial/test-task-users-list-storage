@@ -49,7 +49,7 @@ body {
 .btn:disabled {
   background-color: #535252;
 }
-.btn:hover {
+.btn:not(:disabled):hover {
   background-color: #802727;
 }
 

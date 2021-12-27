@@ -19,6 +19,7 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
   const takeActions = item.querySelector(".user-item__take-actions");
   const actionInputs =
     item.firstElementChild.querySelectorAll(".user-item__input");
+  const actionBtns = item.querySelectorAll(".user-item__btn");
 
   takeActions.addEventListener("click", (e) => {
     switch (e.target.id) {
@@ -29,8 +30,14 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
         }
         break;
       case "delete":
+        for (const actionBtn of actionBtns) {
+          actionBtn.setAttribute("disabled", "disabled");
+        }
         // sendData(undefined, "POST", id - айди добавленного пользователя полученого с бэка);
         setTimeout(() => {
+          for (const actionBtn of actionBtns) {
+            actionBtn.removeAttribute("disabled");
+          }
           item.remove();
           if (
             document.querySelector(".store__list-users").children.length === 0
@@ -50,6 +57,9 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
           const params = new FormData(userItemForm);
           const { name, phone } = Object.fromEntries(params.entries());
 
+          for (const actionBtn of actionBtns) {
+            actionBtn.setAttribute("disabled", "disabled");
+          }
           for (const actionInput of actionInputs) {
             actionInput.setAttribute("disabled", "disabled");
           }
@@ -63,11 +73,15 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
                 actionInput.setAttribute("value", phone);
               }
             }
+            for (const actionBtn of actionBtns) {
+              actionBtn.removeAttribute("disabled");
+            }
             takeActions.classList.remove("_active");
           }, 1000);
           break;
         } else {
           alert("Не все поля заполнены");
+          break;
         }
       case "clear":
         for (const actionInput of actionInputs) {
