@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Storing List Of Users</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="wrapper__page page">
+        <section class="page__store store">
+          <div class="store__container _container">
+            <div class="store__add-user">
+              <form class="store__form form">
+                <fieldset class="form__fieldset">
+                  <div class="form__input-wrapper">
+                    <input
+                      type="text"
+                      class="form__input input _name _init"
+                      name="name"
+                      placeholder="Имя *"
+                      required
+                    />
+                  </div>
+                  <div class="form__input-wrapper">
+                    <input
+                      type="text"
+                      class="form__input input _phone _init"
+                      name="phone"
+                      placeholder="Телефон *"
+                      required
+                    />
+                  </div>
+                  <div class="form__btn-wrapper">
+                    <button class="form__btn btn" type="submit">
+                      Отправить
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
