@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             actionsBtn.removeAttribute("disabled");
           }
         }
-      }, 1000);
+      }, 2000);
     });
   }
 });
