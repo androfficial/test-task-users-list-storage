@@ -1,10 +1,11 @@
-export const sendData = async (url = "", method = "GET", data) => {
-  await fetch(url, {
-    method,
+export const sendData = async (url = "", data) => {
+  const response = await fetch(url, {
+    method: "POST",
     body: data && data,
   });
+
   if (response.ok) {
-    return (result = await response.json());
+    return await response.json();
   } else {
     console.error(`Ошибка HTTP: ${response.status}`);
   }

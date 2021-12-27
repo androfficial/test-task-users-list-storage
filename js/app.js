@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
           actionBtn.setAttribute("disabled", "disabled");
         }
       }
-      // sendData(undefined, "POST", params);
+
+      // const response = sendData(undefined, params);
 
       setTimeout(() => {
         addUser(name, phone);
