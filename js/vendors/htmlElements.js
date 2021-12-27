@@ -7,7 +7,7 @@ export const userItem = (name, phone) => {
               <input type="text" name="name" placeholder="Имя *" value=${name} class="user-item__input _name input" disabled />
             </div>
             <div class="user-item__input-wrapper">
-              <input type="text" name="phone" placeholder="Телефон *" value=${phone} class="user-item__input _phone input" disabled />
+              <input type="number" name="phone" placeholder="Телефон *" value=${phone} class="user-item__input _phone input" disabled />
             </div>
           </div>
           <div class="user-item__take-actions">
