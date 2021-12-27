@@ -18,14 +18,14 @@ body {
   height: 100%;
 }
 ._container {
-  max-width: 1320px;
+  max-width: 1024px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .input {
   font-family: "Open Sans", sans-serif;
-  min-width: 100px;
+  min-width: 200px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.97);
   color: #fff;
@@ -58,12 +58,12 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template: auto / repeat(2, 1fr);
+  grid-template: auto / repeat(2, auto);
   column-gap: 40px;
 }
 .store__add-user {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 .store__list-users {
   overflow-y: auto;
