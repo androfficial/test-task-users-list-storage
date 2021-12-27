@@ -45,7 +45,7 @@ export const addUser = (name = "testName", phone = "050550550") => {
           ) {
             document.querySelector(".store__list-users").remove();
           }
-        }, 1000);
+        }, 2000);
         break;
       case "save":
         let count = 0;
@@ -80,7 +80,7 @@ export const addUser = (name = "testName", phone = "050550550") => {
               actionBtn.removeAttribute("disabled");
             }
             takeActions.classList.remove("_active");
-          }, 1000);
+          }, 2000);
           break;
         } else {
           alert("Не все поля заполнены");
