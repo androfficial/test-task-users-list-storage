@@ -33,7 +33,7 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
         for (const actionBtn of actionBtns) {
           actionBtn.setAttribute("disabled", "disabled");
         }
-        // sendData(undefined, "POST", id - айди добавленного пользователя полученого с бэка);
+        // const response = sendData(undefined, JSON.stringify(id)) - айди добавленного пользователя полученого с бэка);
         setTimeout(() => {
           for (const actionBtn of actionBtns) {
             actionBtn.removeAttribute("disabled");
@@ -48,11 +48,13 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
         break;
       case "save":
         let count = 0;
+
         for (const actionInput of actionInputs) {
           if (actionInput.value === "") {
             count += 1;
           }
         }
+
         if (count === 0) {
           const params = new FormData(userItemForm);
           const { name, phone } = Object.fromEntries(params.entries());
@@ -64,7 +66,7 @@ export const addUser = (name = "testName", phone = "+38050500550") => {
             actionInput.setAttribute("disabled", "disabled");
           }
 
-          // sendData(undefined, "POST", params);
+          // const response = sendData(undefined, params);
           setTimeout(() => {
             for (const actionInput of actionInputs) {
               if (actionInput.classList.contains("_name")) {
