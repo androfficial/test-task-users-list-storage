@@ -7,6 +7,6 @@ export const sendData = async (url = "", data) => {
   if (response.ok) {
     return await response.json();
   } else {
-    console.error(`Ошибка HTTP: ${response.status}`);
+    console.error(`HTTP error: ${response.status}`);
   }
 };

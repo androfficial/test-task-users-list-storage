@@ -34,7 +34,6 @@ export const addUser = (name = "testName", phone = "050550550") => {
         for (const actionBtn of actionBtns) {
           actionBtn.setAttribute("disabled", "disabled");
         }
-        // const response = sendData(undefined, JSON.stringify(id)) - айди добавленного пользователя полученого с бэка);
         setTimeout(() => {
           for (const actionBtn of actionBtns) {
             actionBtn.removeAttribute("disabled");
@@ -83,7 +82,7 @@ export const addUser = (name = "testName", phone = "050550550") => {
           }, 2000);
           break;
         } else {
-          alert("Не все поля заполнены");
+          alert("Not all fields are filled in");
           break;
         }
       case "clear":

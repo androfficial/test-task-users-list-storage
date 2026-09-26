@@ -4,20 +4,20 @@ export const userItem = (name, phone) => {
         <form class="user-item__form form">
           <div class="user-item__info">
             <div class="user-item__input-wrapper">
-              <input type="text" name="name" placeholder="Имя *" value=${name} class="user-item__input _name input" disabled />
+              <input type="text" name="name" placeholder="Name *" value=${name} class="user-item__input _name input" disabled />
             </div>
             <div class="user-item__input-wrapper">
-              <input type="number" name="phone" placeholder="Телефон *" value=${phone} class="user-item__input _phone input" disabled />
+              <input type="number" name="phone" placeholder="Phone *" value=${phone} class="user-item__input _phone input" disabled />
             </div>
           </div>
           <div class="user-item__take-actions">
             <div class="user-item__btn-wrapper">
-              <button class="user-item__btn _edit btn" type="button" id="edit">Редактировать</button>
-              <button class="user-item__btn _save btn" type="button" id="save">Сохранить</button>
+              <button class="user-item__btn _edit btn" type="button" id="edit">Edit</button>
+              <button class="user-item__btn _save btn" type="button" id="save">Save</button>
             </div>
             <div class="user-item__btn-wrapper">
-              <button class="user-item__btn _delete btn" type="button" id="delete">Удалить</button>
-              <button class="user-item__btn _clear btn" type="button" id="clear">Очистить</button>
+              <button class="user-item__btn _delete btn" type="button" id="delete">Delete</button>
+              <button class="user-item__btn _clear btn" type="button" id="clear">Clear</button>
             </div>
           </div>
         </form>
