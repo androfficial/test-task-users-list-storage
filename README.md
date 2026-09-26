@@ -2,7 +2,7 @@
 
 Page for keeping a list of users: add, edit and delete them, with every change delayed by two seconds to simulate a server request. Built in December 2021 as a take-home assignment.
 
-**Live demo:** [test-task-users-list-storage.vercel.app](https://test-task-users-list-storage.vercel.app)
+**Live demo:** [js-users-list.vercel.app](https://js-users-list.vercel.app)
 
 ## Features
 
@@ -24,8 +24,8 @@ Page for keeping a list of users: add, edit and delete them, with every change d
 The page is static with no dependencies, but its scripts are ES modules, which browsers do not load from `file://`, so serve the folder over HTTP, for example with `npx serve .` on Node.js 18 or later.
 
 ```bash
-git clone https://github.com/androfficial/users-list.git
-cd users-list
+git clone https://github.com/androfficial/js-users-list.git
+cd js-users-list
 npx serve .
 ```
 
